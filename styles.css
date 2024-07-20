@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  color: white;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(226, 43%, 10%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main {
+  width: 80%;
+  margin: 10% 0 10% 0;
+}
+.profile_container {
+  border-radius: 10px;
+
+  background-color: hsl(235, 46%, 20%);
+  margin-bottom: 20px;
+}
+.profile {
+  display: flex;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 14px;
+  height: 6rem;
+  justify-content: center;
+  align-items: center;
+}
+.profile img {
+  border: 2px solid white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.profile_details {
+  display: flex;
+  flex-direction: column;
+}
+#report-for {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.name {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  padding: 0 5% 0 5%;
+}
+li {
+  color: hsl(236, 100%, 87%);
+  font-weight: 300;
+}
+li:hover {
+  color: white;
+  cursor: pointer;
+}
+.selected {
+  color: white;
+}
+.card_container {
+  margin-bottom: 20px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.image_container {
+  position: relative;
+  overflow: hidden;
+  height: 2rem;
+}
+.image_container > img {
+  position: absolute;
+  right: 4%;
+}
+.card {
+  background-color: hsl(235, 46%, 20%);
+  height: 6rem;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.grid-item {
+  margin-left: 20px;
+}
+.card > img,
+.previous {
+  margin-right: 20px;
+  justify-self: end;
+}
+.current {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.previous {
+  color: rgb(255, 255, 255, 70%);
+  margin-left: 0;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+.ellipsis {
+  cursor: pointer;
+  width: 20px;
+  height: auto;
+}
+#work {
+  background-color: hsl(15, 100%, 70%);
+}
+#play {
+  background-color: hsl(195, 74%, 62%);
+}
+#study {
+  background-color: hsl(348, 100%, 68%);
+}
+#exercice {
+  background-color: hsl(145, 58%, 55%);
+}
+#social {
+  background-color: hsl(264, 64%, 52%);
+}
+#selfCare {
+  background-color: hsl(43, 84%, 65%);
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+  }
+  .profile_container {
+    grid-column: 1;
+    grid-row: 1/3;
+    height: 20rem;
+    margin-bottom: 0;
+  }
+  .profile {
+    flex-direction: column;
+    padding: 10% 10% 20% 10%;
+
+    align-items: start;
+    height: 8rem;
+  }
+  ul {
+    flex-direction: column;
+    line-height: 40px;
+    align-items: flex-start;
+  }
+  .card_container {
+    margin: 0;
+    position: relative;
+  }
+  .card {
+    cursor: pointer;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    position: absolute;
+
+    bottom: 0;
+    height: 7.6rem;
+  }
+  .card:hover {
+    background-color: hsl(235, 45%, 61%);
+    transition: 0.3s;
+  }
+  .current {
+    grid-column: 1/3;
+    grid-row: 2;
+  }
+  .previous {
+    align-self: start;
+    justify-self: start;
+    grid-column: 1/3;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+}

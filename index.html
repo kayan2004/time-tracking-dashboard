@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="main.js"></script>
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="profile_container">
+        <div class="profile">
+          <img src="images/image-jeremy.png" alt="image of jeremy" />
+          <div class="profile_details">
+            <span id="report-for">Report for</span>
+            <span class="name">Jeremy Robson</span>
+          </div>
+        </div>
+        <ul class="list">
+          <li class="item">Daily</li>
+          <li class="item">Weekly</li>
+          <li class="item">Monthly</li>
+        </ul>
+      </div>
+
+      <div id="work" class="card_container">
+        <div class="image_container">
+          <img src="images/icon-work.svg" alt="" />
+        </div>
+        <article class="card grid">
+          <span class="activity grid-item">Work</span>
+          <img
+            class="ellipsis grid-item"
+            src="images/icon-ellipsis.svg"
+            alt="svg of ellipsis"
+          />
+
+          <span class="current grid-item">32hrs</span>
+          <span class="previous grid-item">Last Week -36hrs</span>
+        </article>
+      </div>
+      <div id="play" class="card_container">
+        <div class="image_container">
+          <img src="images/icon-play.svg" alt="" />
+        </div>
+        <article class="card">
+          <span class="activity grid-item">Play</span>
+          <img
+            class="ellipsis grid-item"
+            src="images/icon-ellipsis.svg"
+            alt="svg of ellipsis"
+          />
+          <span class="current grid-item">10hrs</span>
+          <span class="previous grid-item">Last Week -8hrs</span>
+        </article>
+      </div>
+      <div id="study" class="card_container">
+        <div class="image_container">
+          <img src="images/icon-study.svg" alt="" />
+        </div>
+        <article class="card">
+          <span class="activity grid-item">Study</span>
+          <img
+            class="ellipsis grid-item"
+            src="images/icon-ellipsis.svg"
+            alt="svg of ellipsis"
+          />
+          <span class="current grid-item">4hrs</span>
+          <span class="previous grid-item">Last Week - 7hrs</span>
+        </article>
+      </div>
+      <div id="exercice" class="card_container">
+        <div class="image_container">
+          <img src="images/icon-exercise.svg" alt="" />
+        </div>
+        <article class="card">
+          <span class="activity grid-item">Exercise</span>
+          <img
+            class="ellipsis grid-item"
+            src="images/icon-ellipsis.svg"
+            alt="svg of ellipsis"
+          />
+          <span class="current grid-item">4hrs</span>
+          <span class="previous grid-item">Last Week - 5hrs</span>
+        </article>
+      </div>
+
+      <div id="social" class="card_container">
+        <div class="image_container">
+          <img src="images/icon-social.svg" alt="" />
+        </div>
+        <article class="card">
+          <span class="activity grid-item">Social</span>
+          <img
+            class="ellipsis grid-item"
+            src="images/icon-ellipsis.svg"
+            alt="svg of ellipsis"
+          />
+          <span class="current grid-item">5hrs</span>
+          <span class="previous grid-item">Last Week -10hrs</span>
+        </article>
+      </div>
+
+      <div id="selfCare" class="card_container">
+        <div class="image_container">
+          <img src="images/icon-self-care.svg" alt="" />
+        </div>
+        <article class="card">
+          <span class="activity grid-item">Self Care</span>
+          <img
+            class="ellipsis grid-item"
+            src="images/icon-ellipsis.svg"
+            alt="svg of ellipsis"
+          />
+          <span class="current grid-item">2hrs</span>
+          <span class="previous grid-item">Last Week -2hrs</span>
+        </article>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Kayan</a>.
+    </footer>
+  </body>
+</html>
